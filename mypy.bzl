@@ -14,7 +14,7 @@ DEFAULT_ATTRS = {
         allow_single_file = True,
     ),
     "_mypy_cli": attr.label(
-        default = Label("//mypy"),
+        default = Label("@benchsci_test_tools//:mypy"),
         executable = True,
         cfg = "host",
     ),
